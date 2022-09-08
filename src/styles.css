@@ -2,6 +2,43 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
+
+h1 {
+  color: #753abf;
+  font-style: italic;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #1274c1;
+  font-weight: 600;
+  border: 2px solid rgba(18, 116, 193, 0.3);
+  border-radius: 30px;
+  margin: 10px 10px;
+  background-color: rgba(18, 116, 193, 0.1);
+  padding: 5px 5px;
+  display: inline;
+}
+
+h3 {
+  color: #1274c1;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 20px auto;
+}
+
 .input-group {
   padding-top: 20px;
   justify-content: flex-start;
@@ -49,46 +86,15 @@ body {
   background-color: #9b91af;
 }
 
-h1 {
-  color: #753abf;
-  font-style: italic;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-h2 {
-  color: #1274c1;
-  font-weight: 600;
-  border: 2px solid rgba(18, 116, 193, 0.3);
-  border-radius: 30px;
-  margin: 10px 10px;
-  background-color: rgba(18, 116, 193, 0.1);
-  padding: 5px 5px;
-  display: inline;
-}
-
-h3 {
-  color: #1274c1;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-}
-
-li {
-  list-style: none;
-}
-
-p {
-  margin: 20px auto;
-}
-
 .cur-date {
   color: #1274c1;
   font-style: italic;
   font-size: 16px;
+  padding: 0 auto;
+}
+
+.cur-date ul {
+  padding: 5px 10px;
 }
 
 .cur-temp {
@@ -97,7 +103,6 @@ p {
   font-weight: 800;
   font-size: 40px;
   text-align: right;
-  padding-top: 15px;
   padding-right: 0;
 }
 
@@ -147,7 +152,7 @@ p {
 .container-whole-page {
   background-color: rgba(241, 112, 12, 0.02);
   background-image: url(/src/img/sky.jpg);
-  background-size: 100%;
+  background-size: 103%;
   display: block;
   margin: 20px auto;
   padding: 10px;
