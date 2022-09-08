@@ -111,12 +111,18 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
 
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
@@ -130,6 +136,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit-temperature");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-temperature");
-fahrenheitLink.addEventListener("click", displayCelsiusTemperature);
+celciusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Dnipro");
