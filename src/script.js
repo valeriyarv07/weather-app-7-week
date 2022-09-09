@@ -136,6 +136,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit-temperature");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-temperature");
-celciusLink.addEventListener("click", displayCelsiusTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Dnipro");
